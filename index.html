@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio 9m2 Script Writer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Studio 9m2 Script Writer</h1>
+
+        <!-- Nazwa projektu -->
+        <div class="section">
+            <h2>Nazwa Projektu</h2>
+            <input type="text" id="projectName" placeholder="Wpisz nazwę projektu">
+        </div>
+
+        <!-- Creative Brief -->
+        <div class="section">
+            <h2>Creative Brief</h2>
+            <textarea id="creativeBrief" placeholder="Wpisz krótki creative brief..." rows="4"></textarea>
+        </div>
+
+        <!-- Tytuł -->
+        <div class="section">
+            <h2>Tytuł</h2>
+            <input type="text" id="titleInput" placeholder="Wpisz tytuł">
+            <button onclick="addTitle()">Dodaj tytuł</button>
+            <ul id="titleList"></ul>
+        </div>
+
+        <!-- Hook z opisem ujęcia -->
+        <div class="section">
+            <h2>Hook</h2>
+            <select id="hookCategory">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="cliffhanger">Cliffhanger</option>
+                <option value="curiosity">Curiosity</option>
+            </select>
+            <input type="text" id="hookInput" placeholder="Wpisz hook">
+            <textarea id="hookDescription" placeholder="Opis ujęcia do hooka..." rows="2"></textarea>
+            <button onclick="addHook()">Dodaj hook</button>
+            <ul id="hookList"></ul>
+        </div>
+
+        <!-- Skrypt -->
+        <div class="section">
+            <h2>Skrypt</h2>
+            <input type="text" id="scriptLineInput" placeholder="Wpisz kolejną linię skryptu">
+            <textarea id="scriptDescription" placeholder="Opis ujęcia do linii skryptu..." rows="2"></textarea>
+            <button onclick="addScriptLine()">Dodaj linię</button>
+            <ol id="scriptList"></ol>
+        </div>
+
+        <!-- Eksport do pliku Word -->
+        <div class="section">
+            <button onclick="exportToWord()">Eksportuj do pliku Word</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

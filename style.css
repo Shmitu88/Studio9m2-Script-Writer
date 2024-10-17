@@ -1,0 +1,80 @@
+/* Wczytanie czcionki Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #4BD1A0;
+}
+
+textarea, input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+textarea:focus, input:focus, select:focus {
+    border-color: #4BD1A0;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    background-color: #2a2a2a;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #444;
+}
+
+.line-description {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #1e1e1e;
+    border-left: 3px solid #4BD1A0;
+}
