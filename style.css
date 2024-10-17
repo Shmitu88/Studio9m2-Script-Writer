@@ -78,3 +78,17 @@ ul li, ol li {
     background-color: #1e1e1e;
     border-left: 3px solid #4BD1A0;
 }
+.bulletpoint-section input, .bulletpoint-section button {
+    width: calc(50% - 10px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bulletpoint-section ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.bulletpoint-section li {
+    list-style-type: disc;
+}

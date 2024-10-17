@@ -105,3 +105,24 @@ function exportToWord() {
     link.download = `${projectName}_skrypt.doc`;
     link.click();
 }
+// Funkcja dodawania nowego bullet point
+function addBulletPoint() {
+    const bulletPointInput = document.getElementById("bulletPointInput");
+    const bulletPointText = bulletPointInput.value.trim();
+
+    if (bulletPointText !== "") {
+        const bulletPointList = document.getElementById("bulletPointList");
+
+        // Stwórz element bullet point
+        const listItem = document.createElement("li");
+        listItem.textContent = bulletPointText;
+
+        // Dodaj bullet point do listy
+        bulletPointList.appendChild(listItem);
+
+        // Wyczyść pole po dodaniu
+        bulletPointInput.value = "";
+    } else {
+        alert("Wpisz bullet point!");
+    }
+}

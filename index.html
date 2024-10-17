@@ -17,11 +17,19 @@
             <input type="text" id="projectName" placeholder="Wpisz nazwę projektu">
         </div>
 
-        <!-- Creative Brief -->
-        <div class="section">
-            <h2>Creative Brief</h2>
-            <textarea id="creativeBrief" placeholder="Wpisz krótki creative brief..." rows="4"></textarea>
-        </div>
+        <!-- Creative Brief Section -->
+<div class="section">
+    <h2>Creative Brief</h2>
+    <textarea id="creativeBrief" placeholder="Wpisz krótki creative brief..." rows="4"></textarea>
+    
+    <!-- Pole do dodawania bullet points -->
+    <div class="bulletpoint-section">
+        <input type="text" id="bulletPointInput" placeholder="Dodaj bullet point">
+        <button onclick="addBulletPoint()">Dodaj bullet point</button>
+        <ul id="bulletPointList"></ul> <!-- Lista bullet pointów -->
+    </div>
+</div>
+
 
         <!-- Tytuł -->
         <div class="section">
